@@ -1,0 +1,41 @@
+LINUX DEVICE MANAGEMENT:
+
+
+general commands to learn:
+	ls -la - displays folders by list and permission type
+	ls -la /dev - shows list of devices in filesystem
+	fdisk -l - shows all partitions on a Linux system
+	lsblk - shows information on block devices
+	mount - used to mount a device
+	umount - used to unmount a device
+	df - used to get basic information on hard disk or mounted devices
+	fsck - used to check a device system for errors. Devices must be unmounted.
+
+definitions:
+	mounting- attaching a file or device to the Linux filesystem
+	unmounting - removing a file or device from the linux filesystem
+	/dev - directory of devices in a Linux filesystem. (ls -la /dev is useful.)
+	
+
+device types:
+	1) character- data is transferred by a peripheral - mouse or keyboard - i.e. user input.
+	2) block - data is transferred in block data form - i.e., within system.
+	
+	virtual vs physical differentiation also exists. 
+		for example, snap packages are mounted at a virtual mounting point called a loop. loopo, loop1, ...loop_x.
+		
+names of drives:
+	sda - first drive: sda1, sda2, sda3, ...sda_x, partitions of sda
+	sdb - second drive: sdb1, sdb3, sdb3, ...sdb_x, partitions of sdb
+	sdc - third drive; similarly named partitions.
+	sd_x - progressively named drives. similarly named partitions.
+	
+mounting a drive to a system normally - example:
+	mount /dev/sdb1 /mnt
+	
+mounting a drive to a specific directory - example:
+	mount /dev/sdc1 /media 
+	(mounts a device to the media directory).
+	
+unmounting a device - example:
+ 	umount /dev/sdb1
