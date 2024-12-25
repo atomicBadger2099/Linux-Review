@@ -1,0 +1,25 @@
+LINUX BASIC COMMANDS:
+	list of the most basic commands all Linux users have to know.
+
+
+1: FILE COMMANDS:
+
+pwd- print working directory/current location
+cd - change directory by name and location
+ls - list directory contemts
+rm - remove a file by name
+rmdir <DIRNAME>- remove an empty directory
+rm -r <DIRNAME OR FILENAME>- removes a directory and its contents
+mkdir <DIRNAME> - make an empty directory
+touch <FILENAME> - make an empty file
+cp <DIRNAME OR FILENAME>- copy file or directory
+mv <FILENAME>- move or rename a file
+cat <FILENAME>- output file contents
+
+
+2: COMMAND COMMANDS:
+
+man <COMMAND-NAME> search for manual entry
+locate <COMMAND-NAME>- search for command by keyword
+find <COMMAND-NAME>- most powerful searching utility
+help <COMMAND-NAME>, <COMMAND-NAME> --help - help utility when others fail for finding a command
